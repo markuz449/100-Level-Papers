@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<!-- maranderson, sign_up.html -->
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../underwaterHockey.css">
+		<title>League</title>
+	</head>
+	<body>
+		<h1><em>Underwater Hockey</em></h1>
+		<nav>
+			<ul class='navigation'>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="description.html">Description</a></li>
+				<li><a href="equipment.html">Equipment</a></li>
+				<li><a href="league.html">League</a></li>
+				<li><a>Sign Up</a></li>
+			</ul>
+		</nav>
+		<div>
+			<form method="get" enctype="application/x-www-form-urlencoded" action="http://www.cs.otago.ac.nz/112bin/112formslab.cgi">
+				<div>
+					<input type="hidden" name="recipient" value="markuz449@gmail.com">
+					<input type="hidden" name="subject" value="Computer Science Otago">
+					<input type="hidden" name="followup-page" value="http://www.csnet.otago.ac.nz/maranderson/assignment/Pages/sign_up.html">
+				</div>
+				<fieldset class="textInputs">
+					<legend>Personal Details</legend>
+					<ul>
+						<li>
+							<label for="firstname">Firstname:</label>
+							<input type="text" tabindex="1" name="firstname" id="firstname" title="Your first name and any middle names">
+						</li>
+						<li>
+							<label for="surname">Surname:</label>
+							<input type="text" tabindex="2" name="surname" id="surname" title="Your last name">
+						</li>
+						<li>
+							<label for="birthday">Birthday:</label>
+							<input type="date" tabindex="3" name="birthday" id="birthday" title="Your birthday">
+						</li>
+					</ul>
+					<p>Gender</p>
+					<ul>	
+						<li>
+							<label><input type="radio" tabindex="4" name="gender" id="Male" value="Male">Male</label>
+						</li>
+						<li>
+							<label><input type="radio" tabindex="5" name="gender" id="Female" value="Female">Female</label>
+						</li>						<li>
+							<label><input type="radio" tabindex="6" name="gender" id="Other" value="Other">Other</label>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<label for="sender">Email address:</label>
+							<input type="email" tabindex="7" name="emailaddress" id="sender" title="Your email address">
+						</li>
+						<li>
+							<label for="phone">Phone number:</label>
+							<input type="tel" tabindex="8" name="phonenumber" id="phone" title="Your phone number">
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset>
+					<legend>What equipment do you need?</legend>
+					<ul>
+						<li>
+							<label><input type="checkbox" tabindex="13" name="equipment" value="togs">Togs</label>
+						</li>
+						<li>
+							<label><input type="checkbox" tabindex="14" name="equipment" value="mask">Mask</label>
+						</li>
+						<li>
+							<label><input type="checkbox" tabindex="15" name="equipment" value="snorkel">Snorkel</label>
+						</li>
+						<li>
+							<label><input type="checkbox" tabindex="16" name="equipment" value="hat">Hat</label>
+						</li>
+						<li>
+							<label><input type="checkbox" tabindex="17" name="equipment" value="glove">Glove</label>
+						</li>
+						<li>
+							<label><input type="checkbox" tabindex="18" name="equipment" value="stick">Stick</label>
+						</li>
+						<li>
+							<label><input type="checkbox" tabindex="19" name="equipment" value="fins">Fins</label>
+						</li>
+					</ul>
+			</fieldset>
+				<fieldset>
+					<legend>Experience Level</legend>
+					<ul>
+						<li>
+							<label><input type="radio" tabindex="10" name="experience" value="Never Played">Never Played</label>
+						</li>
+						<li>
+							<label><input type="radio" tabindex="11" name="experience" value="Beginner">Beginner</label>
+						</li>
+						<li>
+							<label><input type="radio" tabindex="12" name="experience" value="Intermmediate">Intermmediate</label>
+						</li>
+						<li>
+							<label><input type="radio" tabindex="12" name="experience" value="Advanced">Advanced</label>
+						</li>
+					</ul>
+			</fieldset>
+			<fieldset>
+					<legend>Comments</legend>
+					<textarea cols="40" rows="4" id="comments" name="comments">Add your comments here</textarea>
+				</fieldset>
+				<fieldset>
+						<input type="reset" name="Reset">
+						<input type="submit" value="Submit">
+				</fieldset>
+			</form>
+		</div>
+		<footer><em>"This website was created for a University project. The content is largely fictional and no services are actually being offered."</em></footer>
+	</body>
+</html>

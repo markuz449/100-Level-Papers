@@ -1,0 +1,129 @@
+/* maranderson, underwaterHockey.css */
+html{
+	background-color: rgb(91,155,213);
+	color: black;
+	font-size: 14px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+h1{
+	background-color: inherit;
+	color: rgb(189,215,238);
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-size: 40px;
+}
+
+nav{
+	margin: auto;
+	width: 1100px;
+}
+
+ul.navigation{
+	background-color: rgb(254,239,152);
+	color: inherit;
+	list-style-type: none;
+	float: left;
+	width: 100%;
+	margin-bottom: 20px;
+	padding-left: 0px;
+	text-align: center;
+}
+
+ul.navigation li{
+	display: inline-block;
+ 	margin-left: 40px;
+	margin-right: 40px;      
+	font-size: 18px;
+	height: 50px;
+	width: 130px;
+	border-left: 1px black solid;
+	border-right: 1px black solid;
+}
+
+ul.navigation li a{
+	line-height: 50px;
+	text-decoration: none;
+}
+
+ul.navigation li:hover{
+	background-color: rgb(224,209,122);
+	color: inherit;
+}
+
+div{
+	clear: left;
+	width: 1100px;
+	background-color: rgb(254,239,152);
+	color: inherit;
+	margin: auto;
+}
+
+h2{
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+}
+
+figure{
+	margin: 0px;
+	padding: 10px;
+	display: inline;
+}
+
+div.imageContainer {
+	text-align: center;
+}
+
+h3{
+	clear: left;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin: 0px;
+}
+
+p{
+	padding: 10px;
+	margin: 0px;
+}
+
+#equipPicture {
+	margin: 20px;
+	float: left;
+}
+
+ul.Equipment li{
+	width: 700px;
+	float: left;
+	margin: 0px;
+	list-style: none;
+	
+}
+
+div.selector {
+	display: block;
+	clear: left;
+	text-align: center;
+}
+
+div.selector figure{
+	clear: left;
+}
+
+tr, th, td{
+	padding: 10px;
+	text-align: center;
+}
+
+table{
+	margin: auto;
+	border: 1px black solid;
+}
+
+footer{
+	text-align: center;
+	background-color: inherit;
+	color: rgb(189,215,238);
+	margin: 10px;
+}
