@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=
+comment1.target=void\ printVerse1()
+comment1.text=declares\ a\ String\ variable\ called\ verse1\ and\ displays\ it\ on\ the\ screen.
+comment2.params=
+comment2.target=void\ printVerse2()
+comment2.text=declares\ a\ String\ variable\ called\ verse2\ and\ displays\ it\ on\ the\ screen.
+comment3.params=verse
+comment3.target=void\ printVerse3(java.lang.String)
+comment3.text=Imputs\ String\ verse3\ displays\ it\ on\ the\ screen\ as\ a\ new\ variable.
+numComments=4

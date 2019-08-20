@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pie()
+comment0.text=constructor\ method,\ sets\ up\ the\ Pie\ panel
+comment1.params=page
+comment1.target=void\ paintComponent(java.awt.Graphics)
+comment1.text=all\ drawing\ code\ goes\ in\ the\ paint\ method,\ which\ is\ called\ automatically
+numComments=2
