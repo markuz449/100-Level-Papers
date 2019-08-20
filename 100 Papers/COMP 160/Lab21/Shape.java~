@@ -1,0 +1,30 @@
+import java.awt.*;
+import java.util.Random;
+
+public class Shape {
+  
+  private int x, y, width, height, red, green, blue;
+  private Color colour;
+  private Random generator = new Random();
+  
+  public Shape(){
+    width = generator.nextInt(30);
+    height = width;
+    x = generator.nextInt(400 - width);
+    y = generator.nextInt(400 - width);
+    red = generator.nextInt(255);
+    green = generator.nextInt(255);
+    blue = generator.nextInt(255);
+    colour = new Color(red, green, blue);
+  }
+  
+  public int randomRange(int lo, int hi){
+    return generator.nextInt(hi-lo) + lo;
+  }
+  
+  public void display (Graphics g){
+    g.setColor(colour);
+    g.fillOval (x, y, width, height);
+  }
+}
+  

@@ -1,0 +1,71 @@
+import javax.swing.*;
+import java.awt.*;
+import java.io.*;
+import java.awt.event.*;
+
+public class ShapePanel extends JPanel {
+  
+  private Shape[] shapes = new Shape [20];
+  private DrawingPanel drawPanel;
+  private JPanel controlPanel;
+  private JButton addShape;
+  private JTextField showNum;
+  private JLabel countLabel;
+  private int count = 0;
+  
+  public ShapePanel(){
+    controlPanel = new JPanel();
+    addShape = new JButton ("Add Shape");
+    countLabel = new JLabel ("Count:");
+    showNum = new JTextField(3);
+    addShape.addActionListener (new ButtonListener());
+    drawPanel = new DrawingPanel();
+    
+    controlPanel.add(addShape);
+    controlPanel.add(countLabel);
+    controlPanel.add(showNum);
+    controlPanel.setPreferredSize(new Dimension(100,400));
+    
+    add(controlPanel);
+    add(drawPanel);
+  }
+  
+  public static void main (String [] args){
+    JFrame contentPane = new JFrame();
+    contentPane.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    contentPane.getContentPane().add(new ShapePanel());
+    contentPane.pack();
+    contentPane.setVisible(true);
+  }
+  
+  /** Private inner class DrawingPanel
+    */
+  private class DrawingPanel extends JPanel{
+    public DrawingPanel(){
+      setBackground(Color.pink);
+      setPreferredSize(new Dimension(400,400));
+    }
+    public void paintComponent(Graphics g){
+      super.paintComponent(g);
+      if (count < shapes.length){
+        for (int i = 0; (shapes[i] != null); i++){
+          shapes[i].display(g);
+        }
+      }
+    }
+  }
+  
+  /** Private inner class ButtonListener
+    */
+  private class ButtonListener implements ActionListener{
+    public void actionPerformed(ActionEvent e){
+      if (count < shapes.length){ 
+        shapes[count] = new Shape();
+        showNum.setText(Integer.toString(count + 1));
+        count ++;
+        repaint();
+      }
+      
+    }
+  }
+}
