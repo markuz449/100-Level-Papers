@@ -1,0 +1,11 @@
+public class TablePanel extends JPanel {
+  
+  
+  
+  public TablePanel(){
+        setPreferredSize(new Dimension(SIZE,SIZE));  // set size of JPanel
+        JFrame frame = new JFrame();                 // create JFrame object
+        frame.getContentPane().add(this);            // add JPanel object to JFrame object
+        frame.pack();                                // wrap ("pack") JFrame object around JPanel object
+        frame.setVisible(true);                      // set visible
+    }

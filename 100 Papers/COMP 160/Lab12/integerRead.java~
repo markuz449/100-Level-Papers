@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class integerRead {
+  
+  public static void main (String [] args){
+    Scanner scan = new Scanner(System.in);
+    boolean iterate = true;
+    int count = 2, total = 0;
+    System.out.println("Enter an integer greater than 1");
+    int userInt = scan.nextInt();
+    while (iterate = true){
+      if (userInt >= count){
+        while (userInt >= count){
+          total = total + count;
+          count += 2;
+        }
+        System.out.println("Sum of even numbers between 2 and " + userInt + " inclusive is: " + total);
+        break;
+      }
+      else {
+        System.out.println("Input value must not be less than 2");
+        System.out.println("Enter an integer greater than 1");
+        userInt = scan.nextInt();
+      }
+    }
+  }
+}

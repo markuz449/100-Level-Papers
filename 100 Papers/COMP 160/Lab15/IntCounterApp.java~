@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class IntCounterApp {
+  
+  public static void main (String [] args){
+    Scanner scan = new Scanner (System.in);
+    int targetNum = scan.nextInt("Which number do you wish to find?");
+  }
+  
+  public int[] makeArray (){
+    Random generator = new Random();
+    int arraySizeMax = 10, arraySizeMin = 5, valueMax = 4, valueMin = 0;
+    int arrayLength = generator.nextInt(arraySizeMax - arraySizeMin + 1) + arraySizeMin;
+    
+    int[arrayLength] numArray;
+    for (i = 0; i < arrayLength.length; i ++){
+      
+    
+  }
+}

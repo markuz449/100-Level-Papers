@@ -1,0 +1,32 @@
+
+/**  
+ * BoxApp.java
+ * Lab 16, COMP160  2017
+ * Tim Kern
+ */
+public class TimesTables{
+  public static void main (String [] args){
+   
+    
+    
+    
+    
+    
+    
+    int cols=12;
+    int rows=12;
+    int index, row = 0;
+    int [] [] table = new int[rows][cols];
+    for (int [] rowLine: table){
+      System.out.println();
+      index = 1;
+      row += 1;
+      for (int col: rowLine){
+        rowLine[col] = index * row;
+        index += 1;
+          System.out.print("\t" +rowLine[col]);
+  
+      }
+    }
+  }
+}

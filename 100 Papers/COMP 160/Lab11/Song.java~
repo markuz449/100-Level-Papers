@@ -1,0 +1,18 @@
+public class Song{
+  private String songLine;
+  
+  public Song (String sLine){
+    songLine = sLine;
+  }
+  
+  public String toString (){
+    return songLine;
+  }
+  
+  public void process (){
+    System.out.println("Length is: " + songLine.length());
+    int lastChar = songLine.length();
+    System.out.println("Last charachter is " + songLine.charAt(lastChar - 1));
+    
+  }
+}

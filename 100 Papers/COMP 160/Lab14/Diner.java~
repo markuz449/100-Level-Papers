@@ -1,0 +1,17 @@
+import javax.swing.*;
+import java.awt.*;
+
+public class Diner {
+  
+  private int x, y, seatNum;
+  private String name;
+  private Color colour;
+  private final int DIAMETER = 50;
+  
+  public Diner (int x, int y, String name, int seatName, Color colour){
+    
+  }
+  
+  public void draw (Graphics g){
+   
+  }

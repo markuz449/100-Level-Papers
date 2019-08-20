@@ -1,0 +1,61 @@
+/** support class for CruiseApp.java
+  * Lab 9 COMP160
+  */
+public class Customer{
+  private String name;
+  private boolean child, student, booked;
+  private double ticket = 56.0, meal = 30.0;
+  
+  public Customer (String nameIn, int age, boolean studentIn){ //Constructor sets the values of a customer
+    name = nameIn;
+    child = isChild(age);
+    student = isStudent(studentIn);
+  }
+  
+  // Accessor methods
+  public String getName(){
+    return name;
+  }
+  public boolean getChild(){
+    return child;
+  } 
+  public boolean getStudent(){
+    return student;
+  }
+  
+  
+  public double getTicket(){ //Sets the ticket price for everyone, price changes for students and children
+    if (student == true || child == true){ 
+      ticket = ticket / 2;
+      return ticket;
+    }else{
+      ticket *= 0.8;
+      return ticket;
+    }
+  }
+  public double getMeal(){ //Sets the meal price for everyone, price changes for students and children
+    if (child == true){
+      meal = meal / 2;
+      return meal;
+    } else {
+      meal *= 0.9;
+      return meal;
+    }
+  }
+  public double getTotal(){
+    double total = ticket + meal;
+    return total;
+  }
+  
+  public boolean isChild (int ageIn){
+    if (5 < ageIn && ageIn <= 16){
+      return true;
+    } else {  
+      return false;
+    }
+  }
+  
+  public boolean isStudent(boolean student){
+    return student;
+  }
+}  

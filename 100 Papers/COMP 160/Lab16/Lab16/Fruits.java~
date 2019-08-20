@@ -1,0 +1,36 @@
+import java.util.Scanner;
+/**  
+ * BoxApp.java
+ * Lab 16, COMP160  2017
+ * Tim Kern
+ */
+
+public class Fruits{
+  public static void main (String [] args){
+    
+    String [] fruits= new String[3];
+    Scanner scan = new Scanner(System.in);
+    int count;
+    
+    for (count = 0; count < fruits.length; count ++){
+      System.out.println("Name a fruit");
+      String userFruit = scan.nextLine();
+      fruits[count] = userFruit;
+    }
+    
+    for (String indexFruit: fruits){ 
+      boolean check = false;
+      while (check == false){
+        System.out.println("Guess what fruit I am? " + indexFruit.substring(0, 2) + "\t" + indexFruit.length() + " Letters");
+        String userGuess = scan.nextLine();
+        if (userGuess.equals(indexFruit)){
+          System.out.println("Correct");
+          check = true;
+        } else{
+          System.out.println("Try Again");
+        }
+      }  
+    }
+  }
+}
+
